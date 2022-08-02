@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#8699C3"
+    tools:context=".MainActivity" >
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="421dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="110dp"
+        android:background="#E6DBDB"
+        android:backgroundTint="#DFD2D2"
+        android:text="@string/bikes_available"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="979dp"
+                android:layout_marginBottom="134dp"
+                android:text="Button"
+                app:layout_constraintBottom_toBottomOf="@+id/article"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.873"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/horizontal1"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:onClick="gotoweb"
+                android:background="#A59A2E"
+                android:backgroundTint="#909841"
+                android:lineSpacingExtra="5sp"
+                android:padding="10sp"
+                android:text="@string/article_text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal1"
+                android:layout_width="0dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="150dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#070707">
+
+                    <ImageButton
+                        android:id="@+id/bike1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:contentDescription="@string/todo"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/bike1" />
+
+                    <ImageButton
+                        android:id="@+id/bike2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:contentDescription="@string/todo1"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/bike1"
+                        app:layout_constraintTop_toTopOf="@id/bike1"
+                        app:srcCompat="@drawable/bike2" />
+
+                    <ImageButton
+                        android:id="@+id/bike3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:contentDescription="@string/todo2"
+                        android:onClick="handleSelection"
+                        android:textAlignment="center"
+                        app:layout_constraintStart_toEndOf="@id/bike2"
+                        app:layout_constraintTop_toTopOf="@id/bike2"
+                        app:srcCompat="@drawable/bike3" />
+
+                    <ImageButton
+                        android:id="@+id/bike4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:contentDescription="@string/todo3"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/bike3"
+                        app:layout_constraintTop_toTopOf="@id/bike3"
+                        app:srcCompat="@drawable/bike4" />
+
+                    <ImageButton
+                        android:id="@+id/bike5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:contentDescription="@string/todo4"
+                        android:onClick="handleSelection"
+                        app:layout_constraintStart_toEndOf="@id/bike4"
+                        app:layout_constraintTop_toTopOf="@id/bike4"
+                        app:srcCompat="@drawable/bike5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
