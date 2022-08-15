@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/BikeRENTAL/BikeRENTAL/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/BikeRENTAL/BikeRENTAL/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/BikeRENTAL/BikeRENTAL/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
+        <entry key="..\:/BikeRENTAL/BikeRENTAL/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.121" />
         <entry key="..\:/Downloads/BikeRENTAL/BikeRENTAL/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Downloads/BikeRENTAL/BikeRENTAL/app/src/main/res/layout/activity_splash_screen.xml" value="0.2351851851851852" />
       </map>
@@ -13,5 +17,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>
